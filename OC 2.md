@@ -3,20 +3,20 @@
 на systemctl cat cron); удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.\
 ответ:Скачала и распаковала node_exporter
 
-!Установка] https://github.com/EVolgina/devops-netology11/blob/main/%D0%BE%D1%81%202%20%D0%B7%D0%B0%D0%B4%201.png
+!Установка](https://github.com/EVolgina/devops-netology11/blob/main/%D0%BE%D1%81%202%20%D0%B7%D0%B0%D0%B4%201.png)
 Переходим в домашнюю директорию node_exporter\
 Cp – копирую исполняемый файл в директорию ./usr/local/bin\
 Создала пользователя под которым буду запускать node_exporter -nodeusr
 
-![Дз2] https://github.com/EVolgina/devops-netology11/blob/main/%D0%BE%D1%81%20%D0%B7%D0%B0%D0%B42.PNG
-![ДЗ21]https://github.com/EVolgina/devops-netology11/blob/main/%D0%B7%D0%B0%D0%B4%203.png
+![Дз2](https://github.com/EVolgina/devops-netology11/blob/main/%D0%BE%D1%81%20%D0%B7%D0%B0%D0%B42.PNG)
+![ДЗ21](https://github.com/EVolgina/devops-netology11/blob/main/%D0%B7%D0%B0%D0%B4%203.png)
 # 2.Изучите опции node_exporter и вывод /metrics по умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети.
 Установите в свою виртуальную машину Netdata. Воспользуйтесь готовыми пакетами для установки (sudo apt install -y netdata).\
 После успешной установки: в конфигурационном файле /etc/netdata/netdata.conf в секции [web] замените значение с localhost на bind to = 0.0.0.0;\
 добавьте в Vagrantfile проброс порта Netdata на свой локальный компьютер и сделайте vagrant reload:\
 config.vm.network "forwarded_port", guest: 19999, host: 19999\
 выполненные действия:Установила netdata.Отредактировала config
-![ДЗ21]
+![ДЗ21](https://github.com/EVolgina/devops-netology11/blob/main/file%20node.png)
 После успешной перезагрузки в браузере на своём ПК (не в виртуальной машине) вы должны суметь зайти на localhost:19999. Ознакомьтесь с метриками, которые по умолчанию собираются Netdata, и с комментариями, которые даны к этим метрикам.
 
 Можно ли по выводу dmesg понять, осознаёт ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?
