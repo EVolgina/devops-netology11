@@ -30,14 +30,13 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999\
 
 В очередной раз переустановила Netdata,не могу добиться графиков. Объясните где ошибка, куда копать
 ![rez](https://github.com/EVolgina/devops-netology11/blob/main/gurnal.PNG)
-![]()
-
+![status](https://github.com/EVolgina/devops-netology11/blob/main/status.PNG)
 
 # 3.Можно ли по выводу dmesg понять, осознаёт ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?
 ответ: есть несколько способов проверить, является ли система Linux, в которой мы работаем, физическим или виртуальным сервером\
 запускаем команду- sudo dmesg | grep "Hypervisor detected"\
 Если ваша система физическая, то мы не увидим никаких выходных данных.\
-если нет:
+если нет:\
 ![dz2](https://github.com/EVolgina/devops-netology11/blob/main/proverka.PNG)
 
 # 4.Как настроен sysctl fs.nr_open на системе по умолчанию? Определите, что означает этот параметр. Какой другой существующий лимит не позволит достичь такого числа (ulimit --help)?
