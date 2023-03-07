@@ -11,6 +11,7 @@ Cp – копирую исполняемый файл в директорию ./
 ![Дз2](https://github.com/EVolgina/devops-netology11/blob/main/%D0%BE%D1%81%20%D0%B7%D0%B0%D0%B42.PNG)
 ![ДЗ21](https://github.com/EVolgina/devops-netology11/blob/main/start.PNG))
 # 2.Изучите опции node_exporter и вывод /metrics по умолчанию. Приведите несколько опций, которые вы бы выбрали для базового мониторинга хоста по CPU, памяти, диску и сети.
+Доступные  метрики Node Exporter расположены по адресу :(https://github.com/prometheus/node_exporter/blob/master/README.md#enabled-by-default) 
 Установите в свою виртуальную машину Netdata. Воспользуйтесь готовыми пакетами для установки (sudo apt install -y netdata).\
 После успешной установки: в конфигурационном файле /etc/netdata/netdata.conf в секции [web] замените значение с localhost на bind to = 0.0.0.0;\
 добавьте в Vagrantfile проброс порта Netdata на свой локальный компьютер и сделайте vagrant reload:\
