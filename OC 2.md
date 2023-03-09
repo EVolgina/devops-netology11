@@ -29,10 +29,10 @@ config.vm.network "forwarded_port", guest: 19999, host: 19999\
 После успешной перезагрузки в браузере на своём ПК (не в виртуальной машине) вы должны суметь зайти на localhost:19999. Ознакомьтесь с метриками, которые по умолчанию собираются Netdata, и с комментариями, которые даны к этим метрикам.\ 
 Получила графики:
 
-![status]()
-![rez]()
-![rez]()
-![rez]()
+![status](https://github.com/EVolgina/devops-netology11/blob/main/status%20netdata.PNG)
+![rez](https://github.com/EVolgina/devops-netology11/blob/main/nedata.PNG)
+![rez1](https://github.com/EVolgina/devops-netology11/blob/main/cpu.PNG)
+![rez2](https://github.com/EVolgina/devops-netology11/blob/main/memory.PNG)
 
 # 3.Можно ли по выводу dmesg понять, осознаёт ли ОС, что загружена не на настоящем оборудовании, а на системе виртуализации?
 ответ: есть несколько способов проверить, является ли система Linux, в которой мы работаем, физическим или виртуальным сервером\
